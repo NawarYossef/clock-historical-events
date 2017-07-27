@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>home</title>
+	<meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  <script type="text/javascript" src="js/bundle.js"></script>
+</head>
+<body>
+  <header>
+    <section class="theme">
+      <span>theme</span>
+      <label for="theme-select">
+        <select>
+          <option value="light-house" class="bab">shore</option>
+          <option value="space">space</option>
+          <option value="texture">texture</option>
+          <option value="landscape">landscape</option>
+        </select>
+      </label>
+    </section>
+
+    <section class ="events-costumize">
+      <label for="checkbox-inline">
+        <input type="checkbox"  data-size="mini" data-on=" " data-off=" " checked data-toggle="toggle" data-class="fast"><span class="togg-value">events</span>
+      </label>
+    </section>
+    <section class="costumize-time-date">
+      <label for="checkbox-inline">
+        <input type="checkbox"  data-size="mini" data-on=" " data-off=" "  checked data-toggle="toggle" class="seconds" data-class="fast"><span class="togg-value">seconds</span>
+      </label>
+      <label for="checkbox-inline">
+        <input type="checkbox" data-size="mini" data-on=" " data-off=" " checked data-toggle="toggle" class="12-hour" data-class="fast"><span class="togg-value">12-hour</span>
+      </label>
+      <label for="checkbox-inline">
+        <input type="checkbox" data-size="mini" data-on=" " data-off=" "  checked data-toggle="toggle" class="am-pm" data-class="fast"><span class="togg-value ">am/pm</span>
+      </label>
+      <label for="checkbox-inline">
+        <input type="checkbox" data-size="mini" data-on=" " data-off=" " checked data-toggle="toggle" class="date" data-class="fast"><span class="togg-value">date</span>
+      </label>
+    </section>
+  </header>
+  <section class="day-date">
+    <div id="hours"></div>
+    <div id="minutes"></div>
+    <div id="am-pm"></div>
+    <div id="seconds"></div>
+  </section>
+  <section class="month-date">
+    <div id="day-of-week"></div>
+    <div id="month"></div>
+    <div id="day-of-month"></div>
+  </section>
+
+  <section class="events">
+    <div class="head-for-events">
+      <p>EVENTS ON THIS DATE</p>
+    </div>
+    <ul class ="list-events">
+    </ul>
+  </section>
+</body>
+</html>
