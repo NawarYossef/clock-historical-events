@@ -17139,7 +17139,7 @@ module.exports = events;
 
 
 let toggle = require("./toggle.js");
-let events = require("./events.js")
+let events = require("./events.js");
 
 const weeekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const monthsNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
