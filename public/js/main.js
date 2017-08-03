@@ -2,8 +2,8 @@
 "use strict";
 
 
-let toggle = require("./toggle.js");
-let events = require("./events.js")
+// let toggle = require("./toggle.js");
+// let events = require("./events.js");
 
 const weeekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const monthsNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
@@ -21,23 +21,23 @@ class Time  {
     this.getAmPm();
   }
 
-  buttonControl() {
-    toggle.imageChange();
-    toggle.fontChange();
-    toggle.secondsToggle();
-    toggle.amPmToggle();
-    toggle.hoursToggle();
-    toggle.dateToggle();
-  }
+  // buttonControl() {
+  //   toggle.imageChange();
+  //   toggle.fontChange();
+  //   toggle.secondsToggle();
+  //   toggle.amPmToggle();
+  //   toggle.hoursToggle();
+  //   toggle.dateToggle();
+  // }
 
-  historicalEvents() {
-    events.postEvents();
-  }
+  // historicalEvents() {
+  //   events.postEvents();
+  // }
 
   init() {
     setInterval(
       function() {
-        this.buttonControl();
+        // this.buttonControl();
         this.setTime();
       }.bind(this), 1000);
   }
@@ -100,7 +100,7 @@ class Time  {
 
 let app = new Time();
 app.init();
-app.historicalEvents()
+// app.historicalEvents()
 
 
 
