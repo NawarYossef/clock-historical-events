@@ -30,7 +30,7 @@ let events = {
                     "font-size" : "16px",
                     "text-align": "left",
                     "paddingLeft": "25px",
-                    "paddingRight": "50px",
+                    "paddingRight": "150px",
                     "paddingBottom": "20px",
                     "line-height": "20px"
                     

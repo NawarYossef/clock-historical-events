@@ -17113,7 +17113,7 @@ let events = {
               range.forEach(function(idx){
                 let eventYear = data["data"]["Events"][idx]["year"];
                 let eventText = data["data"]["Events"][idx]["text"];
-                let paragraph = $(`<li>	&#8226; ${eventYear} 	&#45; ${eventText} </li>`)
+                let paragraph = $(`<li>	&#8226; year: ${eventYear} 	&#45; ${eventText} </li>`)
                   .css({
                     "color": "#282d33",
                     "font-size" : "16px",
