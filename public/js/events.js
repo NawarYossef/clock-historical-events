@@ -26,7 +26,7 @@ let events = {
                 let eventText = data["data"]["Events"][idx]["text"];
                 let paragraph = $(`<li>	&#8226; ${eventYear} 	&#45; ${eventText} </li>`)
                   .css({
-                    "color": "#282d33",
+                    "color": "#000000",
                     "font-size" : "16px",
                     "text-align": "left",
                     "paddingLeft": "25px",

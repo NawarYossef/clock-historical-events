@@ -95,18 +95,19 @@ font-size: 148px;
 
 /*Events*/
 .events {
-  background-color: #D0D0D3;
-  margin-top: 100px;
+  background-color: #7e7e7e;
+  margin-top: 150px;
 }
 
 .head-for-events {
   height: 60px;
   margin-bottom: 40px;
-  background-color: #9595A2;
+  background-color: #575757;
 }
 
 .head-for-events > p {
   font-size: 24px;
+  color: #000000;
   padding-top: 10px;
   padding-bottom: 35px;
   width: 280px;
