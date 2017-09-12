@@ -17259,7 +17259,7 @@ let toggleData = {
   imageChange: function(){
                 $(document).ready(function(){
                   let imgTitle = $("select > option").filter(":selected").text();
-                  $("body").css("background-image", "url(images/" + imgTitle + ".jpg)");
+                  $("body").css("background-image", "url(images/" + imgTitle + "-min" + ".jpg)");
                 });
   },
 
@@ -17280,13 +17280,13 @@ let toggleData = {
 
   secondsToggle: function() {
     $(document).ready(function(){
-      $(".seconds").prop('checked') ? $("#seconds").show() : $("#seconds").hide();
+      $(".seconds").prop('checked') ? $("#seconds").show('fast') : $("#seconds").hide('fast');
     });
   },
 
   amPmToggle: function() {
     $(document).ready(function(){
-      $(".am-pm").prop('checked') ? $("#am-pm").show() : $("#am-pm").hide();
+      $(".am-pm").prop('checked') ? $("#am-pm").show("fast") : $("#am-pm").hide("fast");
     });
   },
 
