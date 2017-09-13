@@ -121,17 +121,21 @@ font-size: 148px;
 
 
 /* Smartphones (landscape) ----------- */
-@media only screen and  (max-width : 320px)  {
+@media only screen and  (min-width : 320px)  {
   header {
 
     height: 130px;
   }
-  header section {
+  header section:nth-of-type(2) {
     display: inline-block;
   }
 
+  .events-costumize {
+    margin-left: 6px;
+  }
+
   label[for="checkbox-inline"] {
-    margin-left: 0px;
+    margin-left: 2px;
   }
 
   .costumize-time-date {
@@ -148,12 +152,89 @@ font-size: 148px;
     margin-left: 5px;
     margin-right: 2px;
   }
+  
+  .day-date, .month-date {
+    width: 100%;
+  }
+
+  #hours, #minutes {
+    font-size: 80px;
+  }
+
+  #am-pm {
+   font-size: 45px;
+   /*margin-left: 60%;*/
+   position: absolute;
+   top: 27%;
+   left: 75%;
+  }
+
+  #day-of-week, #hours {
+    margin-left: 10px;
+  }
+
+  .events ul li {
+    padding-right: 5px;
+  }
 
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (min-width : 321px) and (max-width : 375px)  {
+@media only screen and  (min-width : 321px) and (max-width : 375px)  {
+  header {
 
+    height: 130px;
+  }
+  header section:nth-of-type(2) {
+    display: inline-block;
+  }
+
+  .events-costumize {
+    margin-left: 0px;
+  }
+
+  label[for="checkbox-inline"] {
+    margin-left: 2px;
+  }
+
+  .costumize-time-date {
+    margin-left: 0px;
+    display: inline-table;
+  }
+
+  .theme {
+    margin-left: 5%;
+    margin-right: 11%;
+  }
+
+  .togg-value {
+    margin-left: 5px;
+    margin-right: 2px;
+  }
+  
+  .day-date, .month-date {
+    width: 100%;
+  }
+
+  #hours, #minutes {
+    font-size: 80px;
+  }
+
+  #am-pm {
+   font-size: 45px;
+   /*margin-left: 60%;*/
+   position: absolute;
+   top: 27%;
+   left: 65%;
+  }
+
+  #day-of-week, #hours {
+    margin-left: 10px;
+  }
+
+  .events ul li {
+    padding-right: 5px;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
