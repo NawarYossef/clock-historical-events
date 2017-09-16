@@ -121,7 +121,7 @@ font-size: 148px;
 
 
 /* Smartphones (landscape) ----------- */
-@media only screen and  (min-width : 320px)  {
+@media only screen and  (max-width : 320px)  {
   header {
 
     height: 130px;
@@ -177,10 +177,14 @@ font-size: 148px;
     padding-right: 5px;
   }
 
+  #day-of-week, #month, #day-of-month {
+  font-size: 20px;
+  }
+
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and  (min-width : 321px) and (max-width : 375px)  {
+@media only screen and  (min-width : 321px) and (max-width : 425px)  {
   header {
 
     height: 130px;
@@ -235,16 +239,50 @@ font-size: 148px;
   .events ul li {
     padding-right: 5px;
   }
+
+  #day-of-week, #month, #day-of-month {
+  font-size: 20px;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 426px) and (max-device-width : 768px) {
     /* Styles */
+    #am-pm {
+   font-size: 45px;
+   position: absolute;
+   top: 27%;
+   left: 58%;
+  }
+
+  .costumize-time-date {
+    margin-left: 8px;
+  }
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
     /* Styles */
+    header {
+    height: 100px;
+  }
+
+    #am-pm {
+   font-size: 45px;
+   position: absolute;
+   top: 27%;
+   left: 70%;
+  }
+
+  #day-of-week, #month, #day-of-month {
+    font-size: 37px;
+  }
+
+  label[for="checkbox-inline"] {
+    margin-left: 40px;
+  }
+  
+
 }
 
 /* iPads (portrait) ----------- */
