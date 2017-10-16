@@ -28,6 +28,7 @@ class Time  {
     toggle.amPmToggle();
     toggle.hoursToggle();
     toggle.dateToggle();
+    toggle.eventsToggle();
   }
 
   historicalEvents() {
