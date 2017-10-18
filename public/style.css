@@ -286,19 +286,17 @@ font-size: 148px;
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
-    /* Styles */
+    .month-date {
+      width: 40%;
+    }
 }
 
-/* Large screens ----------- */
-@media only screen and (min-width : 1824px) {
-    /* Styles */
+@media only screen and (min-width : 2560px) {
+  .month-date {
+    width: 20%;
+    margin: 0 auto;
+  }
 }
-
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
-    /* Styles */
-}
-
 
 
 
